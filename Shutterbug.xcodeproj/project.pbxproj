@@ -24,6 +24,11 @@
 		34188DC0195906060053217A /* FlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34188DBF195906060053217A /* FlickrPhotosTVC.m */; };
 		34188DC3195906D70053217A /* JustPostedFlicrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34188DC2195906D70053217A /* JustPostedFlicrPhotosTVC.m */; };
 		34188DC8195907330053217A /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 34188DC7195907330053217A /* FlickrFetcher.m */; };
+		342E3DEB195EDFF1000EE181 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 342E3DE9195EDFF1000EE181 /* Model.xcdatamodeld */; };
+		342E3DFA195EE194000EE181 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E3DF9195EE194000EE181 /* Photo+Flickr.m */; };
+		342E3DFD195EE50A000EE181 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E3DFC195EE50A000EE181 /* Photo.m */; };
+		342E3E00195EE50A000EE181 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E3DFF195EE50A000EE181 /* Photographer.m */; };
+		342E3E03195EE583000EE181 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E3E02195EE583000EE181 /* Photographer+Create.m */; };
 		34519EBE195917480018E4E9 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34519EBD195917480018E4E9 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,15 @@
 		34188DC5195907330053217A /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		34188DC6195907330053217A /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		34188DC7195907330053217A /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		342E3DEA195EDFF1000EE181 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		342E3DF8195EE194000EE181 /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
+		342E3DF9195EE194000EE181 /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
+		342E3DFB195EE50A000EE181 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		342E3DFC195EE50A000EE181 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		342E3DFE195EE50A000EE181 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
+		342E3DFF195EE50A000EE181 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
+		342E3E01195EE583000EE181 /* Photographer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+Create.h"; sourceTree = "<group>"; };
+		342E3E02195EE583000EE181 /* Photographer+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographer+Create.m"; sourceTree = "<group>"; };
 		34519EBC195917480018E4E9 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		34519EBD195917480018E4E9 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +151,15 @@
 				34188DC4195907330053217A /* Flickr Fetcher */,
 				34188DA11958581A0053217A /* Images.xcassets */,
 				34188D8D1958581A0053217A /* Supporting Files */,
+				342E3DFB195EE50A000EE181 /* Photo.h */,
+				342E3DFC195EE50A000EE181 /* Photo.m */,
+				342E3DF8195EE194000EE181 /* Photo+Flickr.h */,
+				342E3DF9195EE194000EE181 /* Photo+Flickr.m */,
+				342E3DFE195EE50A000EE181 /* Photographer.h */,
+				342E3DFF195EE50A000EE181 /* Photographer.m */,
+				342E3E01195EE583000EE181 /* Photographer+Create.h */,
+				342E3E02195EE583000EE181 /* Photographer+Create.m */,
+				342E3DE9195EDFF1000EE181 /* Model.xcdatamodeld */,
 			);
 			path = Shutterbug;
 			sourceTree = "<group>";
@@ -278,11 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342E3E03195EE583000EE181 /* Photographer+Create.m in Sources */,
 				34519EBE195917480018E4E9 /* ImageViewController.m in Sources */,
 				34188DC0195906060053217A /* FlickrPhotosTVC.m in Sources */,
 				34188D971958581A0053217A /* AppDelegate.m in Sources */,
+				342E3DFA195EE194000EE181 /* Photo+Flickr.m in Sources */,
+				342E3E00195EE50A000EE181 /* Photographer.m in Sources */,
+				342E3DEB195EDFF1000EE181 /* Model.xcdatamodeld in Sources */,
 				34188DC3195906D70053217A /* JustPostedFlicrPhotosTVC.m in Sources */,
 				34188DC8195907330053217A /* FlickrFetcher.m in Sources */,
+				342E3DFD195EE50A000EE181 /* Photo.m in Sources */,
 				34188D931958581A0053217A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +538,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		342E3DE9195EDFF1000EE181 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				342E3DEA195EDFF1000EE181 /* Model.xcdatamodel */,
+			);
+			currentVersion = 342E3DEA195EDFF1000EE181 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34188D7B1958581A0053217A /* Project object */;
 }
